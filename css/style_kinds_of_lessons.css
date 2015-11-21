@@ -1,0 +1,163 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	width: 100%;
+	height: auto;
+	margin: 0 auto 0 auto;
+}
+
+#header {
+	width: 100%;
+	height: 80px;
+	background-color: #00afb4;
+	position: relative;
+}
+.header {
+	width: 1300px;
+	height: 80px;
+	background-color: #00afb4;
+	margin: 0 auto 0 auto;
+}
+.header h1 {
+	font-family: Tw Cen MT Condensed;
+	font-size: 40px;
+	float: left;
+	color: white;
+	margin: 20px 0 0 20px;
+}
+.header ul {
+	float: right;
+}
+.header ul ul {
+	margin-top: -500px;
+	margin-left: 30px;
+	position: absolute;
+	z-index: 9;
+	transition: all ease .3s;
+}
+.header li {
+	float: left;
+	list-style-type: none;
+	padding: 15px;
+}
+.header li:hover > a {
+	background-color: white;
+	color: #00afb4;
+}
+.header li:hover > ul {
+	display: block;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+.header li li {
+	background-color: #00afb4;
+	list-style-type: none;
+	display: block;
+	float: none;
+	list-style-type: none;
+	padding: 5px;
+	border: 1px solid white;
+	margin-bottom: 3px;
+	border-radius: 15px;
+	transition: all ease .3s;
+}
+.header li li:hover {
+	background-color: white;
+	box-shadow: 0 0 3px;
+}
+.header a {
+	border-radius: 15px;
+	padding: 5px;
+	text-decoration: none;
+	color: white;
+	font-family: Learning Curve Pro;
+	font-size: 31px; 
+	transition: all ease .3s;
+}
+#content_p {
+	width: 1300px;
+	height: 665px;
+	background-color: white;
+	margin: 0 auto 0 auto;
+}
+
+#cover_kol {
+	width: 1300px;
+	height: 900px;
+	background-image: url(../images/kinds_of_lessons.png);
+	margin: 0 auto 0 auto;
+	position: absolute;
+	z-index: 7;
+}
+#cover_kol h3 {
+	color: white;
+	font-family: Tw Cen MT Condensed;
+	font-size: 35px;
+	float: left;
+	margin: 50px 0 0 100px;
+}
+#cover_kol ul {
+	padding: 10px;
+	float:left;
+	margin: 100px 300px 0 -200px;
+}
+#cover_kol li {
+	float:none;
+	list-style-type: none;
+	padding: 5px;
+}
+#cover_kol a {
+	font-family: Learning Curve Pro;
+	font-size: 31px; 
+	text-decoration: none;
+	color: white;
+	transition: all ease .2s;
+}
+#cover_kol a:hover {
+	padding: 5px;
+	color: #00afb4;
+	background-color: white;
+	border-radius: 10px;
+}
+#cover_kol h5 {
+	font-family: Learning Curve Pro;
+	font-size: 40px;
+	position: absolute;
+	float: left;
+	margin: 700px 0 0 615px;
+}
+#cover_kol p {
+	font-family: Learning Curve Pro;
+	font-size: 40px;
+	float: left;
+	margin: 750px 0 0 500px;
+	position: absolute;
+}
+#cover_kol .choose {
+	font-family: Learning Curve Pro;
+	font-size: 40px;
+	float: left;
+	position: absolute;
+	margin: 320px 0 0 670px;
+}
+#footer {
+	width: 100%;
+	height: 80px;
+	background-color: #00afb4;
+	position: relative;
+}
+.footer {
+	padding: 20px;
+	background-color: #00afb4;
+	text-align: center;
+	margin:0 auto 0 auto;
+}
+.footer a {
+	font-family: Tw Cen MT Condensed;
+	font-size: 30px;
+	text-decoration: none;
+	color: white;
+}

@@ -1,0 +1,333 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	width: 100%;
+	height: auto;
+	margin: 0 auto 0 auto;
+}
+
+#header {
+	width: 100%;
+	height: 80px;
+	background-color: #00afb4;
+	position: relative;
+}
+.header {
+	width: 1300px;
+	height: 80px;
+	background-color: #00afb4;
+	margin: 0 auto 0 auto;
+}
+.header h1 {
+	font-family: Tw Cen MT Condensed;
+	font-size: 40px;
+	float: left;
+	color: white;
+	margin: 20px 0 0 20px;
+}
+.header ul {
+	float: right;
+}
+.header ul ul {
+	margin-top: -500px;
+	margin-left: 30px;
+	position: absolute;
+	transition: all ease .3s;
+	z-index: 4;
+}
+.header li {
+	float: left;
+	list-style-type: none;
+	padding: 15px;
+}
+.header li:hover > a {
+	background-color: white;
+	color: #00afb4;
+}
+.header li:hover > ul {
+	display: block;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+.header li li {
+	background-color: #00afb4;
+	list-style-type: none;
+	display: block;
+	float: none;
+	list-style-type: none;
+	padding: 5px;
+	border: 1px solid white;
+	margin-bottom: 3px;
+	border-radius: 15px;
+	transition: all ease .3s;
+}
+.header li li:hover {
+	background-color: white;
+	box-shadow: 0 0 3px;
+}
+.header a {
+	border-radius: 15px;
+	padding: 5px;
+	text-decoration: none;
+	color: white;
+	font-family: Learning Curve Pro;
+	font-size: 31px; 
+	transition: all ease .3s;
+}
+
+#content {
+	width: 1300px;
+	height: 365px;
+	background-color: white;
+	margin: 0 auto 0 auto;
+}
+.content {
+	width: 1300px;
+	height: 365px;
+	position: absolute;
+	background-color: white;
+	border-radius: 0 0 20px 20px;
+	z-index: 1;
+}
+
+#content img {
+		position: absolute;
+	width: 100px;
+	height: 400px;
+	background-image: url(../images/big_ben.png);
+	float: left;
+	margin: 10px 0 0 -60px;
+	transform: rotate(18deg);
+	z-index: 19;
+}
+
+.pertama {
+	position: absolute;
+	width: 400px;
+	height: 230px;
+	background-image: url(../images/pertama.png);
+	margin: 80px auto 0 455px;
+	border-radius: 5px;
+	box-shadow: 0 10px 40px black;
+	z-index: 4;
+	transition: all ease .3s;
+}
+.pertama:hover {
+	margin: 110px auto 0 455px;	
+}
+.kedua {
+	position: absolute;
+	width: 400px;
+	height: 230px;
+	background-image: url(../images/ketiga.png);
+	margin: 50px auto 0 700px;
+	border-radius: 5px;
+	box-shadow:  -10px 10px 40px black;
+	z-index: 2;
+	transition: all ease .3s;
+}
+.kedua:hover {
+	z-index: 5;
+	margin: 110px auto 0 700px;
+}
+.ketiga {
+	position: absolute;
+	width: 400px;
+	height: 230px;
+	background-image: url(../images/kedua.png);
+	margin: 50px auto 0 200px;
+	border-radius: 5px;
+	box-shadow:  10px 10px 40px black;
+	z-index: 3;
+	transition: all ease .3s;
+}
+.ketiga:hover {
+	z-index: 5;
+	margin: 110px auto 0 200px;
+}
+
+
+#information {
+	width: 1300px;
+	height: 240px;
+	background-color: white;
+	margin: 0 auto 0 auto ;
+}
+#information a:hover {
+	background-color: #00afb4; 
+	color: white;
+	transform: rotate(-4deg);
+	padding: 2px;
+}
+
+.category1 {
+	max-width: 420px;
+	height: 230px;
+	background-color: white;
+	margin: 10px 10px 0 10px;
+	float: left;
+}
+.category2 {
+	max-width: 420px;
+	height: 230px;
+	background-color: white;
+	margin: 10px 10px 0 0;
+	float: left;
+}
+.category3 {
+	max-width: 420px;
+	height: 230px;
+	background-color: white;
+	margin: 10px 0 0 0;
+	float: left;
+}
+
+.category1 h3 {
+	font-family: Tw Cen MT Condensed;
+	font-size: 35px;
+	margin: 2px 0 0 9px;
+}
+
+.category2 h3 {
+	font-family: Tw Cen MT Condensed;
+	font-size: 35px;
+	margin: 2px 0 0 9px;
+}
+
+.category3 h3 {
+	font-family: Tw Cen MT Condensed;
+	font-size: 35px;
+	margin: 2px 0 0 9px;
+}
+
+.category1 p {
+	font-family: Learning Curve Pro;
+	font-size: 30px;
+	margin: 2px 0 0 17px;
+}
+.category1 a {
+	font-family: Tw Cen MT Condensed;
+	font-size: 25px;
+	color: #00afb4;
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+	transition: all ease .2s;
+}
+
+.category2 p {
+	font-family: Learning Curve Pro;
+	font-size: 30px;
+	margin: 2px 0 0 17px;
+}
+.category2 a {
+	font-family: Tw Cen MT Condensed;
+	font-size: 25px;
+	color: #00afb4;
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+	transition: all ease .2s;
+}
+.category3 p {
+	font-family: Learning Curve Pro;
+	font-size: 30px;
+	margin: 2px 0 0 17px;
+}
+.category3 a {
+	font-family: Tw Cen MT Condensed;
+	font-size: 25px;
+	color: #00afb4;
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+	transition: all ease .2s;
+}
+
+#sosmed {
+	width: 900px;
+	height: 60px;
+	background-color: white;
+	margin: 0 auto 0 auto;
+}
+.facebook {
+	width: 200px;
+	height: 40px;
+	background-image: url(../images/facebook_icon.png);
+	margin: 0 29px 0 0;
+	float: left;
+}
+.twitter {
+	width: 210px;
+	height: 40px;
+	background-image: url(../images/twitter_icon.png);
+	margin: 0 30px 0 0;
+	float: left;
+}
+.blog {
+	width: 200px;
+	height: 40px;
+	background-image: url(../images/blog_icon.png);
+	margin: 0 30px 0 0;
+	float: left;
+}
+.youtube {
+	width: 200px;
+	height: 40px;
+	background-image: url(../images/youtube_icon.png);
+	float: left;
+}
+.facebook a {
+	color: #3e5990;
+	font-family: Tw Cen MT Condensed;
+	font-size: 25px;
+	margin: 5px 2px 0 0;
+	text-decoration: none;
+	float: right;
+}
+.twitter a {
+	color: #61a5bc;
+	font-family: Tw Cen MT Condensed;
+	font-size: 25px;
+	margin: 5px 0px 0 0px;
+	text-decoration: none;
+	float: right;
+}
+.blog a {
+	color: #c27032;
+	font-family: Tw Cen MT Condensed;
+	font-size: 25px;
+	margin: 5px 1px 0 0;
+	text-decoration: none;
+	float: right;
+}
+.youtube a {
+	color: #a92d2f;
+	font-family: Tw Cen MT Condensed;
+	font-size: 25px;
+	margin: 5px 18px 0 0;
+	text-decoration: none;
+	float: right;
+}
+
+#footer {
+	width: 100%;
+	height: 80px;
+	background-color: #00afb4;
+	position: relative;
+}
+.footer {
+	padding: 20px;
+	background-color: #00afb4;
+	text-align: center;
+	margin:0 auto 0 auto;
+}
+.footer a {
+	font-family: Tw Cen MT Condensed;
+	font-size: 30px;
+	text-decoration: none;
+	color: white;
+}
