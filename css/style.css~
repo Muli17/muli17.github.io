@@ -10,30 +10,15 @@
     font-style: normal;
 
 }
-
 @font-face {
-	font-family:'Tw Cen MT Condensed Normal';
+	font-family:'Tw Cen MT Condensed';
 	src: url('fonts/Tw_Cen_MT_Condensed_Normal/TwCenMT-Condensed_gdi.eot');
 	src: url('fonts/Tw_Cen_MT_Condensed_Normal/TwCenMT-Condensed_gdi.eot?#iefix') format('embedded-opentype'),
 		url('fonts/Tw_Cen_MT_Condensed_Normal/TwCenMT-Condensed_gdi.woff') format('woff'),
 		url('fonts/Tw_Cen_MT_Condensed_Normal/TwCenMT-Condensed_gdi.ttf') format('truetype'),
 		url('fonts/Tw_Cen_MT_Condensed_Normal/TwCenMT-Condensed_gdi.otf') format('opentype'),
-		url('fonts/Tw_Cen_MT_Condensed_Normal/TwCenMT-Condensed_gdi.svg#Tw Cen MT Condensed Normal') format('svg');
+		url('fonts/Tw_Cen_MT_Condensed_Normal/TwCenMT-Condensed_gdi.svg#Tw Cen MT Condensed') format('svg');
 	font-weight: 400;
-	font-style: normal;
-	font-stretch: normal;
-	unicode-range: U+0020-25CA;
-}
-
-@font-face {
-	font-family:'Tw Cen MT Condensed Bold';
-	src: url('fonts/Tw_Cen_MT_Condensed_Bold/TwCenMT-CondensedBold_gdi.eot');
-	src: url('fonts/Tw_Cen_MT_Condensed_Bold/TwCenMT-CondensedBold_gdi.eot?#iefix') format('embedded-opentype'),
-		url('fonts/Tw_Cen_MT_Condensed_Bold/TwCenMT-CondensedBold_gdi.woff') format('woff'),
-		url('fonts/Tw_Cen_MT_Condensed_Bold/TwCenMT-CondensedBold_gdi.ttf') format('truetype'),
-		url('fonts/Tw_Cen_MT_Condensed_Bold/TwCenMT-CondensedBold_gdi.otf') format('opentype'),
-		url('fonts/Tw_Cen_MT_Condensed_Bold/TwCenMT-CondensedBold_gdi.svg#Tw Cen MT Condensed Bold') format('svg');
-	font-weight: 700;
 	font-style: normal;
 	font-stretch: normal;
 	unicode-range: U+0020-25CA;
@@ -65,7 +50,7 @@ body {
 	margin: 0 auto 0 auto;
 }
 .header h1 {
-	font-family: Tw Cen MT Condensed Bold;
+	font-family: Tw Cen MT Condensed;
 	font-size: 40px;
 	float: left;
 	color: white;
@@ -79,7 +64,7 @@ body {
 	margin-top: -500px;
 	margin-left: 30px;
 	position: absolute;
-	transition: all ease .3s;
+	transition: all ease .5s;
 	z-index: 4;
 }
 .header .one {
@@ -241,19 +226,19 @@ body {
 }
 
 .category1 h3 {
-	font-family: Tw Cen MT Condensed Bold;
+	font-family: Tw Cen MT Condensed;
 	font-size: 35px;
 	margin: 2px 0 0 9px;
 }
 
 .category2 h3 {
-	font-family: Tw Cen MT Condensed Bold;
+	font-family: Tw Cen MT Condensed;
 	font-size: 35px;
 	margin: 2px 0 0 9px;
 }
 
 .category3 h3 {
-	font-family: Tw Cen MT Condensed Bold;
+	font-family: Tw Cen MT Condensed;
 	font-size: 35px;
 	margin: 2px 0 0 9px;
 }
@@ -264,7 +249,7 @@ body {
 	margin: 2px 0 0 17px;
 }
 .category1 a {
-	font-family: Tw Cen MT Condensed Normal;
+	font-family: Tw Cen MT Condensed;
 	font-size: 25px;
 	color: #00afb4;
 	float: right;
@@ -279,7 +264,7 @@ body {
 	margin: 2px 0 0 17px;
 }
 .category2 a {
-	font-family: Tw Cen MT Condensed Normal;
+	font-family: Tw Cen MT Condensed;
 	font-size: 25px;
 	color: #00afb4;
 	float: right;
@@ -293,7 +278,7 @@ body {
 	margin: 2px 0 0 17px;
 }
 .category3 a {
-	font-family: Tw Cen MT Condensed Normal;
+	font-family: Tw Cen MT Condensed;
 	font-size: 25px;
 	color: #00afb4;
 	float: right;
@@ -337,7 +322,7 @@ body {
 }
 .facebook a {
 	color: #3e5990;
-	font-family: Tw Cen MT Condensed Normal;
+	font-family: Tw Cen MT Condensed;
 	font-size: 25px;
 	margin: 5px 2px 0 0;
 	text-decoration: none;
@@ -345,7 +330,7 @@ body {
 }
 .twitter a {
 	color: #61a5bc;
-	font-family: Tw Cen MT Condensed Normal;
+	font-family: Tw Cen MT Condensed;
 	font-size: 25px;
 	margin: 5px 0px 0 0px;
 	text-decoration: none;
@@ -353,7 +338,7 @@ body {
 }
 .blog a {
 	color: #c27032;
-	font-family: Tw Cen MT Condensed Normal;
+	font-family: Tw Cen MT Condensed;
 	font-size: 25px;
 	margin: 5px 1px 0 0;
 	text-decoration: none;
@@ -361,7 +346,7 @@ body {
 }
 .youtube a {
 	color: #a92d2f;
-	font-family: Tw Cen MT Condensed Normal;
+	font-family: Tw Cen MT Condensed;
 	font-size: 25px;
 	margin: 5px 18px 0 0;
 	text-decoration: none;
@@ -381,7 +366,7 @@ body {
 	margin:0 auto 0 auto;
 }
 .footer a {
-	font-family: Tw Cen MT Condensed Normal;
+	font-family: Tw Cen MT Condensed;
 	font-size: 30px;
 	text-decoration: none;
 	color: white;
