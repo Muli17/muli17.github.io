@@ -44,6 +44,20 @@ body {
 	padding: 0;
 }
 
+.image {
+	background-image: url("../images/big_ben.png");
+	position: absolute;
+	width: 100px;
+	height: 400px;
+	margin-top: 100px;
+	margin-left: -30px;
+	transform:rotate(19deg);
+	-webkit-transform:rotate(19deg);
+	-moz-transform:rotate(19deg);
+	-o-transform:rotate(19deg);
+	-ms-transform:rotate(19deg);
+}
+
 #container {
 	width: 100%;
 	height: auto;
@@ -54,12 +68,14 @@ body {
 	width: 100%;
 	height: 80px;
 	background-color: #00afb4;
-	position: relative;
+	z-index: 10;
+	float: left;
 }
 .header {
 	width: 1200px;
 	height: 80px;
 	background-color: #00afb4;
+	z-index: 10;
 	margin: 0 auto 0 auto;
 }
 .header h1 {
@@ -67,7 +83,7 @@ body {
 	font-size: 40px;
 	float: left;
 	color: white;
-	margin: 20px 0 0 20px;
+	margin-top: 7px;
 }
 .header ul {
 	float: right;
@@ -75,10 +91,15 @@ body {
 }
 .header ul ul {
 	margin-top: -500px;
-	margin-left: 30px;
+	margin-left: 70px;
 	position: absolute;
+	opacity: 0;
 	transition: all ease .3s;
-	z-index: 4;
+	-webkit-transition: all ease .3s;
+	-moz-transition: all ease .3s;
+	-o-transition: all ease .3s;
+	-ms-transition: all ease .3s;
+	z-index: 10;
 }
 .header .one {
 	float: left;
@@ -91,14 +112,15 @@ body {
 .header .one:hover {
 	width: 165px;
 	background-color: white;
-	border-radius: 15px;
+	border-radius: 10px;
 }
 .header .one:hover > a {
 	color: #00afb4;
 }
 .header .one:hover > ul {
 	margin-top: 10px;
-	margin-left: 30px;
+	margin-left: 70px;
+	opacity: 10;
 }
 .header .two {
 	background-color: #00afb4;
@@ -109,12 +131,20 @@ body {
 	padding: 5px;
 	border: 1px solid white;
 	margin-bottom: 3px;
-	border-radius: 15px;
+	border-radius: 10px;
 	transition: all ease .3s;
+	-webkit-transition: all ease .3s;
+	-moz-transition: all ease .3s;
+	-o-transition: all ease .3s;
+	-ms-transition: all ease .3s;
 }
 .header .two:hover {
 	background-color: white;
-	box-shadow: 0 0 3px;
+	box-shadow: 0 0 20px;
+	-webkit-box-shadow: 0 0 20px;
+	-moz-box-shadow: 0 0 20px;
+	-o-box-shadow: 0 0 20px;
+	-ms-box-shadow: 0 0 20px;
 }
 .header .two:hover > a {
 	color: #00afb4;
@@ -128,83 +158,72 @@ body {
 	font-family: Learning Curve Pro;
 	font-size: 31px; 
 	transition: all ease .3s;
+	-webkit-transition: all ease .3s;
+	-moz-transition: all ease .3s;
+	-o-transition: all ease .3s;
+	-ms-transition: all ease .3s;
 }
-
 #content {
-	width: 1200px;
-	height: 380px;
-	background-color: white;
-	margin: 0 auto 0 auto;
+	width: 100%;
+	height: auto;
+	float: left;
 }
 .content {
 	width: 1200px;
-	height: 385px;
-	position: absolute;
+	height: 380px;
 	background-color: white;
-	border-radius: 0 0 20px 20px;
-	z-index: 1;
-}
-
-img {
-	position: absolute;
-	width: 100px;
-	height: 400px;
-	background-image: url(../images/big_ben.png);
-	float: left;
-	margin: 90px 0 0 -26px;
-	transform: rotate(20deg);
-	z-index: 19;
 }
 
 .pertama {
 	position: absolute;
 	width: 400px;
 	height: 230px;
-	background-image: url(../images/pertama.png);
-	margin: 85px auto 0 400px;
+	background-image: url(../images/kedua.png);
 	border-radius: 5px;
-	box-shadow: 0 10px 35px black;
-	z-index: 4;
+	box-shadow: 10px 10px 35px black;
+	margin:50px 0 0 150px;
+	z-index: 2;
 	transition: all ease .3s;
 }
 .pertama:hover {
-	margin: 120px auto 0 400px;
+	margin:110px 0 0 150px;
+	z-index: 5;
 }
 .kedua {
 	position: absolute;
 	width: 400px;
 	height: 230px;
-	background-image: url(../images/ketiga.png);
-	margin: 50px auto 0 650px;
+	background-image: url(../images/pertama.png);
 	border-radius: 5px;
-	box-shadow:  -10px 10px 35px black;
-	z-index: 2;
+	box-shadow:  0px 10px 35px black;
+	margin:80px 0 0 0;
+	z-index: 4;
 	transition: all ease .3s;
 }
 .kedua:hover {
 	z-index: 5;
-	margin: 120px auto 0 650px;
+	margin:99px 0 0 0;
 }
 .ketiga {
 	position: absolute;
 	width: 400px;
 	height: 230px;
-	background-image: url(../images/kedua.png);
-	margin: 50px auto 0 150px;
+	background-image: url(../images/ketiga.png);
 	border-radius: 5px;
-	box-shadow:  10px 10px 35px black;
+	box-shadow:  -10px 10px 35px black;
+	margin: 50px 0 0 -150px;
 	z-index: 3;
 	transition: all ease .3s;
 }
 .ketiga:hover {
 	z-index: 5;
-	margin: 120px auto 0 150px;
+	margin: 110px 0 0 -150px;
 }
 
-
 #information {
-	width: 1200px;
-	height: 270px;
+	width: 100%;
+	height: auto;
+	float: left;
 	background-color: white;
 	margin: 0 auto 0 auto ;
 }
@@ -219,21 +238,18 @@ img {
 	max-width: 390px;
 	height: 230px;
 	background-color: white;
-	margin: 5px 0 0 11px;
 	float: left;
 }
 .category2 {
 	max-width: 390px;
 	height: 230px;
 	background-color: white;
-	margin: 5px 0 0 0;
 	float: left;
 }
 .category3 {
 	max-width: 390px;
 	height: 230px;
 	background-color: white;
-	margin: 5px 0 0 0;
 	float: left;
 }
 
@@ -257,7 +273,7 @@ img {
 
 .category1 p {
 	font-family: Learning Curve Pro;
-	font-size: 30px;
+	font-size: 31px;
 	margin: 2px 0 0 17px;
 }
 .category1 a {
@@ -272,7 +288,7 @@ img {
 
 .category2 p {
 	font-family: Learning Curve Pro;
-	font-size: 30px;
+	font-size: 31px;
 	margin: 2px 0 0 17px;
 }
 .category2 a {
@@ -286,7 +302,7 @@ img {
 }
 .category3 p {
 	font-family: Learning Curve Pro;
-	font-size: 30px;
+	font-size: 31px;
 	margin: 2px 0 0 17px;
 }
 .category3 a {
@@ -299,38 +315,38 @@ img {
 	transition: all ease .2s;
 }
 
-#sosmed {
-	width: 850px;
-	height: 60px;
+
+#sosmed{
+	width: 100%;
+	height: auto;
 	background-color: white;
-	margin: 50px auto 15px auto;
+	margin-top: 79px;
+	float: left;
+}
+.sosmed {
+	width: 1200px;
+	height: 80px;
 }
 .facebook {
 	width: 200px;
 	height: 40px;
 	background-image: url(../images/facebook_icon.png);
-	margin: 0 10px 0 0;
-	float: left;
 }
 .twitter {
 	width: 210px;
 	height: 40px;
 	background-image: url(../images/twitter_icon.png);
-	margin: 0 10px 0 0;
-	float: left;
 }
 .blog {
 	width: 200px;
 	height: 40px;
 	background-image: url(../images/blog_icon.png);
-	margin: 0 10px 0 0;
-	float: left;
+
 }
 .youtube {
 	width: 200px;
 	height: 40px;
 	background-image: url(../images/youtube_icon.png);
-	float: left;
 }
 .facebook a {
 	color: #3e5990;
@@ -369,13 +385,13 @@ img {
 	width: 100%;
 	height: 80px;
 	background-color: #00afb4;
-	position: relative;
+	float: left;
 }
 .footer {
-	padding: 20px;
+	padding: 0;
 	background-color: #00afb4;
 	text-align: center;
-	margin:0 auto 0 auto;
+	margin:30px auto 0 auto;
 }
 .footer a {
 	font-family: Tw Cen MT Condensed Normal;
