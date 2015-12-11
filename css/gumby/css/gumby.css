@@ -1284,18 +1284,18 @@ img { -ms-interpolation-mode: bicubic; }
 
   /*information*/
   .first_info {
-  		height: 285px;
-  		margin: 0;
+  		height: auto;
+  		margin: 0 0 30px 0;
   		padding: 0;
    }
     .second_info {
-  		height: 285px;
-  		margin: 0;
+  		height: auto;
+  		margin: 0 0 30px 0;
   		padding: 0;
   }
     .third_info {
-  		height: 285px;
-  		margin: 0;
+  		height: auto;
+  		margin: 0 0 30px 0;
   		padding: 0;
   }
   .information h3 {
@@ -1313,7 +1313,7 @@ img { -ms-interpolation-mode: bicubic; }
   /*sosmed*/
   .social_media {
   		padding: 0;
-  		margin: 20px 0 0 0;
+  		margin: 20px 0 10px 0;
   }
   .social_media img {
   		width: 30px;
