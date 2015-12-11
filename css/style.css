@@ -1,3 +1,5 @@
+/* ::: my css(cascading stylesheet) ::: */
+
 @font-face {
     font-family: 'Learning Curve Pro';
     src: url('fonts/learning_curve/learningcurve_ot-webfont.eot');
@@ -8,7 +10,6 @@
          url('fonts/learning_curve/learningcurve_ot-webfont.svg#Learning Curve Pro') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -44,188 +45,174 @@ body {
 	padding: 0;
 }
 
-.image {
-	background-image: url("../images/big_ben.png");
-	position: absolute;
-	width: 100px;
-	height: 400px;
-	margin-top: 100px;
-	margin-left: -30px;
-	transform:rotate(19deg);
-	-webkit-transform:rotate(19deg);
-	-moz-transform:rotate(19deg);
-	-o-transform:rotate(19deg);
-	-ms-transform:rotate(19deg);
+#wrapper {
+
 }
 
-#container {
+#header_one {
 	width: 100%;
+	height: auto;
+	background-color: #00afb4;
+	float: left;
+	z-index: 10;
+}
+.header_one {
+	width: 1200px;
 	height: auto;
 	margin: 0 auto 0 auto;
 }
-
-#header {
-	width: 100%;
-	height: 80px;
-	background-color: #00afb4;
-	z-index: 10;
-	float: left;
-}
-.header {
-	width: 1200px;
-	height: 80px;
-	background-color: #00afb4;
-	z-index: 10;
-	margin: 0 auto 0 auto;
-}
-.header h1 {
+.header_one h1 {
 	font-family: Tw Cen MT Condensed Bold;
 	font-size: 40px;
-	float: left;
 	color: white;
-	margin-top: 7px;
-}
-.header ul {
-	float: right;
-	margin-top: 25px;
-}
-.header ul ul {
-	margin-top: -500px;
-	margin-left: 70px;
-	position: absolute;
-	opacity: 0;
-	transition: all ease .3s;
-	-webkit-transition: all ease .3s;
-	-moz-transition: all ease .3s;
-	-o-transition: all ease .3s;
-	-ms-transition: all ease .3s;
-	z-index: 10;
-}
-.header .one {
+	cursor: pointer;
 	float: left;
-	list-style-type: none;
-	padding: 5px;
+}
+.one {
+	margin-top: 18px;
+	float: right;
+}
+.one_two {
 	width: 165px;
-	margin-right: 1px;
-	text-align: center;
-}
-.header .one:hover {
-	width: 165px;
-	background-color: white;
-	border-radius: 10px;
-}
-.header .one:hover > a {
-	color: #00afb4;
-}
-.header .one:hover > ul {
-	margin-top: 10px;
-	margin-left: 70px;
-	opacity: 10;
-}
-.header .two {
+	padding: 9px 0 2px 0;
+	border-radius: 11px;
 	background-color: #00afb4;
 	list-style-type: none;
-	display: block;
-	float: none;
-	list-style-type: none;
-	padding: 5px;
-	border: 1px solid white;
-	margin-bottom: 3px;
-	border-radius: 10px;
+	text-align: center;
+	float: left;
 	transition: all ease .3s;
-	-webkit-transition: all ease .3s;
-	-moz-transition: all ease .3s;
-	-o-transition: all ease .3s;
-	-ms-transition: all ease .3s;
 }
-.header .two:hover {
-	background-color: white;
-	box-shadow: 0 0 20px;
-	-webkit-box-shadow: 0 0 20px;
-	-moz-box-shadow: 0 0 20px;
-	-o-box-shadow: 0 0 20px;
-	-ms-box-shadow: 0 0 20px;
+.one_two:hover {
+	background: white;
+	border-radius: 12px;
 }
-.header .two:hover > a {
+.one_two:hover > a {
 	color: #00afb4;
 }
-.header a {
-	border-radius: 15px;
-	padding: 5px;
-	width: 150px;
-	text-decoration: none;
-	color: white;
+.one_two a {
 	font-family: Learning Curve Pro;
-	font-size: 31px; 
-	transition: all ease .3s;
-	-webkit-transition: all ease .3s;
-	-moz-transition: all ease .3s;
-	-o-transition: all ease .3s;
-	-ms-transition: all ease .3s;
+	font-size: 31px;
+	color: white;
+	text-decoration: none;
 }
-#content {
-	width: 100%;
-	height: auto;
-	float: left;
+.one_two:hover > .two {
+	margin: 0 0 0 50px;
+	opacity: 10;
+	z-index: 99;
 }
-.content {
-	width: 1200px;
-	height: 380px;
+.two {
+ 	padding: 17px;
+ 	margin: -500px 0 0 45px;
+ 	position: absolute;
+ 	opacity: 0;
+ 	transition: all ease .3s;
+}
+.two_two {
+	width: 180px;
+	padding: 5px;
+	margin-bottom: 3px;
+	background-color: #00afb4;
+	border-radius: 12px;
+	border: 1px solid white;
+	text-align: left;
+	transition: all ease .5s;
+}
+.two_two:hover {
 	background-color: white;
+	box-shadow: 0 0 10px 2px;
+	text-align: center;
+}
+.two_two:hover > a {
+	color: #00afb4;
+}
+.two_two a {
+	color: white;
 }
 
-.pertama {
-	position: absolute;
-	width: 400px;
-	height: 230px;
-	background-image: url(../images/kedua.png);
-	border-radius: 5px;
-	box-shadow: 10px 10px 35px black;
-	margin:50px 0 0 150px;
-	z-index: 2;
-	transition: all ease .3s;
+
+#header_two {
+ background-color: white;
 }
-.pertama:hover {
-	margin:110px 0 0 150px;
+.header_two {
+	width: 1200px;
+	height: 350px;
+	background-color: white;
+	margin: 20px auto 20px auto;
+	position: relative;
+}
+.pertama {
+	max-width: 100%;
+	height: auto;
+	position: relative;
+	margin: 41px 0 0 150px;
+	box-shadow: 20px 20px 30px;
+	border-radius: 7px;
 	z-index: 5;
+	cursor: pointer;
+	transition: all ease .2s;
 }
 .kedua {
-	position: absolute;
-	width: 400px;
-	height: 230px;
-	background-image: url(../images/pertama.png);
-	border-radius: 5px;
-	box-shadow:  0px 10px 35px black;
-	margin:80px 0 0 0;
-	z-index: 4;
-	transition: all ease .3s;
-}
-.kedua:hover {
-	z-index: 5;
-	margin:99px 0 0 0;
+	max-width: 100%;
+	height: auto;
+	position: relative;
+	margin: 75px 0 0 0;
+	box-shadow: 0 20px 30px;
+	border-radius: 7px;
+	z-index: 10;
+	cursor: pointer;
+	transition: all ease .2s;
 }
 .ketiga {
-	position: absolute;
-	width: 400px;
-	height: 230px;
-	background-image: url(../images/ketiga.png);
-	border-radius: 5px;
-	box-shadow:  -10px 10px 35px black;
-	margin: 50px 0 0 -150px;
-	z-index: 3;
-	transition: all ease .3s;
+	max-width: 100%;
+	height: auto;
+	position: relative;
+	margin: 41px 0 0 -150px;
+	box-shadow: -20px 20px 30px;
+	border-radius: 7px;
+	z-index: 5;
+	cursor: pointer;
+	transition: all ease .2s;	
+}
+
+.pertama:hover {
+	z-index: 11;
+	margin: 110px 0 0 150px;
+}
+.kedua:hover {
+	z-index: 11;
+	margin: 95px 0 0 0;
 }
 .ketiga:hover {
-	z-index: 5;
+	z-index: 11;
 	margin: 110px 0 0 -150px;
 }
 
 #information {
 	width: 100%;
 	height: auto;
-	float: left;
 	background-color: white;
-	margin: 0 auto 0 auto ;
+}
+.information {
+ 	width: 1200px;
+ 	height: auto;
+ 	position: relative;
+}
+.information h3 {
+	font-family: Tw Cen MT Condensed Bold;
+	font-size: 35px;
+}
+.information p {
+	font-family: Learning Curve Pro;
+	font-size: 30px;
+	letter-spacing: 1px;
+}
+.information a{
+	font-family: Tw Cen MT Condensed Normal;
+	font-size: 25px;
+	color: #00afb4;
+	float: right;
+	margin-right: 10px;
+	transition: all ease .2s;
 }
 #information a:hover {
 	background-color: #00afb4; 
@@ -233,165 +220,134 @@ body {
 	transform: rotate(-4deg);
 	padding: 2px;
 }
-
-.category1 {
-	max-width: 390px;
-	height: 230px;
-	background-color: white;
-	float: left;
+.first_info {
+	width: 390px;
+	height: 255px;
+ 	position: relative;
 }
-.category2 {
-	max-width: 390px;
-	height: 230px;
-	background-color: white;
-	float: left;
+.second_info {
+	width: 390px;
+	height: 255px;
+ 	position: relative;
 }
-.category3 {
-	max-width: 390px;
-	height: 230px;
-	background-color: white;
-	float: left;
-}
-
-.category1 h3 {
-	font-family: Tw Cen MT Condensed Bold;
-	font-size: 35px;
-	margin: 2px 0 0 9px;
-}
-
-.category2 h3 {
-	font-family: Tw Cen MT Condensed Bold;
-	font-size: 35px;
-	margin: 2px 0 0 9px;
-}
-
-.category3 h3 {
-	font-family: Tw Cen MT Condensed Bold;
-	font-size: 35px;
-	margin: 2px 0 0 9px;
-}
-
-.category1 p {
-	font-family: Learning Curve Pro;
-	font-size: 31px;
-	margin: 2px 0 0 17px;
-}
-.category1 a {
-	font-family: Tw Cen MT Condensed Normal;
-	font-size: 25px;
-	color: #00afb4;
-	float: right;
-	margin-right: 10px;
-	margin-top: 10px;
-	transition: all ease .2s;
-}
-
-.category2 p {
-	font-family: Learning Curve Pro;
-	font-size: 31px;
-	margin: 2px 0 0 17px;
-}
-.category2 a {
-	font-family: Tw Cen MT Condensed Normal;
-	font-size: 25px;
-	color: #00afb4;
-	float: right;
-	margin-right: 10px;
-	margin-top: 10px;
-	transition: all ease .2s;
-}
-.category3 p {
-	font-family: Learning Curve Pro;
-	font-size: 31px;
-	margin: 2px 0 0 17px;
-}
-.category3 a {
-	font-family: Tw Cen MT Condensed Normal;
-	font-size: 25px;
-	color: #00afb4;
-	float: right;
-	margin-right: 10px;
-	margin-top: 10px;
-	transition: all ease .2s;
+.third_info {
+	width: 390px;
+	height: 255px;
+ 	position: relative;
 }
 
 
-#sosmed{
+#social_media {
 	width: 100%;
 	height: auto;
 	background-color: white;
-	margin-top: 79px;
-	float: left;
 }
-.sosmed {
+.social_media {
 	width: 1200px;
-	height: 80px;
+	height: auto;
+	float: left;
+	margin: 70px 0 55px 0;
 }
-.facebook {
-	width: 200px;
-	height: 40px;
-	background-image: url(../images/facebook_icon.png);
-}
-.twitter {
-	width: 210px;
-	height: 40px;
-	background-image: url(../images/twitter_icon.png);
-}
-.blog {
-	width: 200px;
-	height: 40px;
-	background-image: url(../images/blog_icon.png);
 
-}
-.youtube {
-	width: 200px;
+.facebook {
+	max-width: 100%;
 	height: 40px;
-	background-image: url(../images/youtube_icon.png);
+	float: left;
+	margin: 0 2px 0 165px;
+}
+.facebook img {
+	max-width: 100%;
+	height: auto;
+	float: left;
+	cursor: pointer;
 }
 .facebook a {
-	color: #3e5990;
 	font-family: Tw Cen MT Condensed Normal;
 	font-size: 25px;
-	margin: 5px 2px 0 0;
+	color: #3e5990;	
 	text-decoration: none;
-	float: right;
+	float: left;
+	margin: 8px  3px 0 3px;
+}
+
+.twitter {
+	max-width: 100%;
+	height: 40px;
+	float: left;
+	margin: 0 6px 0 7px;
+}
+.twitter img {
+	max-width: 100%;
+	height: auto;
+	float: left;
+	cursor: pointer;
 }
 .twitter a {
-	color: #61a5bc;
 	font-family: Tw Cen MT Condensed Normal;
 	font-size: 25px;
-	margin: 5px 0px 0 0px;
+	color: #61a5bc;
 	text-decoration: none;
-	float: right;
+	float: left;
+	margin: 8px  3px 0 3px;
+}
+
+.google {
+	max-width: 100%;
+	height: 40px;
+	float: left;
+	margin: 0 7px 0 2px;
+}
+.google img {
+	max-width: 100%;
+	height: auto;
+	float: left;
+	cursor: pointer;
+}
+.google a {
+	font-family: Tw Cen MT Condensed Normal;
+	font-size: 25px;
+	color: #a92d2f;
+	text-decoration: none;
+	float: left;
+	margin: 8px  3px 0 3px;
+}
+
+.blog {
+	max-width: 100%;
+	height: 40px;
+	float: left;
+	margin: 0 7px 0 2px;
+}
+.blog img {
+	max-width: 100%;
+	height: auto;
+	float: left;
+	cursor: pointer;
 }
 .blog a {
+	font-family: Tw Cen MT Condensed Normal;
+	font-size: 25px;
 	color: #c27032;
-	font-family: Tw Cen MT Condensed Normal;
-	font-size: 25px;
-	margin: 5px 1px 0 0;
 	text-decoration: none;
-	float: right;
+	float: left;
+	margin: 8px  3px 0 3px;
 }
-.youtube a {
-	color: #a92d2f;
-	font-family: Tw Cen MT Condensed Normal;
-	font-size: 25px;
-	margin: 5px 18px 0 0;
-	text-decoration: none;
-	float: right;
-}
+
 
 #footer {
 	width: 100%;
-	height: 80px;
+	height: auto;
 	background-color: #00afb4;
 	float: left;
+	z-index: 10;
 }
 .footer {
-	padding: 0;
+	width: 100%;
+	height: auto;
+	padding: 21px;
+	margin: 4px auto 0 auto;
 	background-color: #00afb4;
 	text-align: center;
-	margin:30px auto 0 auto;
 }
 .footer a {
 	font-family: Tw Cen MT Condensed Normal;

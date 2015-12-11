@@ -1221,6 +1221,145 @@ img { -ms-interpolation-mode: bicubic; }
 /* Mobile */
 @media only screen and (max-width: 767px) { body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; }
   .container { min-width: 0; margin-left: 0; margin-right: 0; }
+
+  /*header_one*/
+  .header_one h1 {
+  	font-size: 25px;
+  }
+  .header_one a {
+  	font-size: 25px;
+  }
+  .header_one ul {
+  	float: left;
+  	margin: 0 0 4px 0;
+  	padding: 0;
+  }
+  .header_one ul ul {
+  	display: none;
+  }
+  .header_one li {
+  	width: 70px;
+  	margin-left: 2px;
+  	padding: 0;
+  }
+  .header_one li:hover {
+  	border-radius: 7px;
+  }
+  .header_one li li {
+  	width: 150px;
+  }
+  /*--------------------------------------------------*/
+
+  /*header_two*/
+  .header_two {
+  		margin-top: 7px;
+  		margin-bottom: 0;
+  		height: auto;
+  	}
+  .pertama { 
+  		margin: 0;  
+  		box-shadow:none;
+  }
+  .kedua { 	
+  		margin: 0;  	
+  		box-shadow: none;
+  	}
+  .ketiga { 
+  		margin: 0;  
+  		box-shadow: none;
+  	}
+  .pertama:hover {
+  		margin: 0;
+  		transform: scale(0.9);
+  }
+  .kedua:hover {
+  		margin: 0;
+  		transform: scale(0.9);
+  }
+  .ketiga:hover {
+  		margin: 0;
+  		transform: scale(0.9);
+  }
+  /*--------------------------------------------------*/
+
+  /*information*/
+  .first_info {
+  		height: 285px;
+  		margin: 0;
+  		padding: 0;
+   }
+    .second_info {
+  		height: 285px;
+  		margin: 0;
+  		padding: 0;
+  }
+    .third_info {
+  		height: 285px;
+  		margin: 0;
+  		padding: 0;
+  }
+  .information h3 {
+  		font-size: 25px;
+  }
+  .information p {
+  		font-size: 23px;
+  }
+  .information a {
+  		font-size: 20px;
+  }
+
+  /*--------------------------------------------------*/
+
+  /*sosmed*/
+  .social_media {
+  		padding: 0;
+  		margin: 20px 0 0 0;
+  }
+  .social_media img {
+  		width: 30px;
+  		height: 30px;
+  		margin: 0 4px 0 4px;
+  }
+  .facebook {
+  		margin: 0;
+  		padding: 0;
+  }
+    .twitter {
+  		margin: 0;
+  		padding: 0;
+  }
+    .google {
+  		margin: 0;
+  		padding: 0;
+  }
+    .blog {
+  		margin: 0;
+  		padding: 0;
+  }
+
+  .facebook a{
+  		display: none;
+  }
+
+  .twitter a{
+  		display: none;
+  }
+
+  .google a{
+  		display: none;
+  }
+
+  .blog a{
+  		display: none;
+  }
+  /*---------------------------------------------------*/
+
+  /*footer*/
+  .footer a {
+  		font-size: 20px;
+  }
+  /*---------------------------------------------------*/
+
   .row { width: 100%; min-width: 0; margin-left: 0; margin-right: 0; }
   .row .row .column, .row .row .columns { padding: 0; }
   .row .centered { margin-left: 0 !important; }
