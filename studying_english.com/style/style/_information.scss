@@ -1,0 +1,72 @@
+#information {
+	width: 100%;
+	height: auto;
+	background-color: white;
+}
+
+.information {
+	width: 1200px;
+	height: auto;
+	position: relative;
+	margin: 0 auto 0 auto;
+	.four {
+		width: 390px;
+		height: 255px;
+		position: relative;
+	}
+	h3 {
+		font-family: Tw Cen MT Condensed Bold;
+		font-size: 35px;
+	}
+	p {
+		font-family: Learning Curve Pro;
+		font-size: 30px;
+		letter-spacing: 1px;
+		word-wrap: break-word;
+	}
+	a {
+		font-family: Tw Cen MT Condensed Normal;
+		font-size: 25px;
+		color: #00afb4;
+		float: right;
+		margin-right: 10px;
+		transition: all ease .3s;
+		&:hover {
+			background-color: #00afb4;
+			color: white;
+			transform: rotate(-4deg);
+			padding: 2px;
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) { body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; }
+  .container { min-width: 0; margin-left: 0; margin-right: 0; }
+  .row { width: 100%; min-width: 0; margin-left: 0; margin-right: 0; }
+  .row .row .column, .row .row .columns { padding: 0; }
+  .row .centered { margin-left: 0 !important; }
+  .column, .columns { width: auto !important; float: none; margin-left: 0; margin-right: 0; }
+  .column:last-child, .columns:last-child { margin-right: 0; float: none; }
+  [class*="column"] + [class*="column"]:last-child { float: none; }
+  [class*="column"]:before { display: table; }
+  [class*="column"]:after { display: table; clear: both; }
+  [class^="push_"], [class*="push_"], [class^="pull_"], [class*="pull_"] { margin-left: 0 !important; }
+
+	.information {
+		.four {
+			height: auto;
+			margin: 0 0 30px 0;
+		}
+		h3 {
+			font-size: 25px;
+		}
+		p {
+			font-size: 23px;
+		}
+		a {
+			font-size: 20px;
+			margin: 0;
+		}
+	}
+
+   }
